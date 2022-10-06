@@ -50,4 +50,5 @@ if (metodo=="1"):
     system(f"scp -i {key} -p{port} {origen} {usuario}@{ip}:{destino}")
 
 elif (metodo=="2"):
-    system(f"scp -p{port} {origen} {usuario}@{ip}:{destino}")
+    password = input("introduce la contraseña")
+    system(f"sshpass -p{password} scp -p{port} {origen} {usuario}@{ip}:{destino}")
