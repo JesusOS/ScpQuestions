@@ -35,4 +35,4 @@ elif (metodo=="2"):
     password = "bolson"
     system(f"sshpass -p{password} scp -p{port} {origen} {usuario}@{ip}:{destino}")
 
-#Script terminado
+#Script terminado v2
